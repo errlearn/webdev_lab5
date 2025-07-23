@@ -7,8 +7,8 @@
 </head>
 <body>
   <h1>Volunteer Form</h1>
+  <legend>My Info</legend>
   <fieldset>
-    <legend>My Info</legend>
     <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
       <label for="fname">First Name:</label>
       <input id="fname" type="text" name="first_name_field">
@@ -28,13 +28,10 @@
         <option value="18-" selected>Under 18</option>
         <option value="18+">Over 18</option>
       </select>
-      <input type="hidden" name="hidden_field">
-    </form>
   </fieldset>
   <fieldset>
     <legend>My Availability</legend>
     <h2>Days Available:</h2>
-    <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
       <label>Sunday<input type="checkbox" name="available_field[]" value="sun"></label>
       <label>Monday<input type="checkbox" name="available_field[]" value="mon"></label>
       <label>Tuesday<input type="checkbox" name="available_field[]" value="tue"></label>
