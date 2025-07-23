@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <fieldset>
+    <legend>My Info</legend>
+    <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+      <label for="fname">First Name:</label>
+      <input id="fname" type="text" name="first_name_field">
+      <label for="lname">Last Name:</label>
+      <input id="lname" type="text" name="last_name_field">
+      <label for="phone">Phone:</label>
+      <input id="phone" type="number" name="phone_field">
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email_field">
+      <p>Gender:</p>
+      <label for="male">Male</label>
+      <input id="male" type="radio" name="gender_field" value="m">
+      <label for="female">Female</label>
+      <input id="female" type="radio" name="gender_field" value="f">
+      <p>Age:</p>
+      <select name="age_field">
+        <option value="18-" selected>Under 18</option>
+        <option value="18+">Over 18</option>
+      </select>
+      <input type="hidden" name="hidden_field">
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>My Availability</legend>
+    <h2>Days Available:</h2>
+    <label>Sunday<input type="checkbox" name="available_field[]" value="sun"></label>
+    <label>Monday<input type="checkbox" name="available_field[]" value="mon"></label>
+    <label>Tuesday<input type="checkbox" name="available_field[]" value="tue"></label>
+    <label>Wednesday<input type="checkbox" name="available_field[]" value="wed"></label>
+    <label>Thursday<input type="checkbox" name="available_field[]" value="thu"></label>
+    <label>Friday<input type="checkbox" name="available_field[]" value="fri"></label>
+    <label>Saturday<input type="checkbox" name="available_field[]" value="sat"></label>
+    <h3>Comments</h3>
+    <textarea name="comments_field"></textarea>
+    <input type="hidden" name="hidden_field">
+  </fieldset>
+</body>
+</html>
